@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="/font.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        .pdf-container {
+            width: 80%;
+            height: 80vh;
+            margin: 20px auto;
+            border: 2px solid #ccc;
+            background-color: #fff;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        input[type="file"] {
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <object data="http://yoursite.com/the.pdf" type="application/pdf" width="750px" height="750px">
+        <embed src="http://yoursite.com/the.pdf" type="application/pdf">
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+        </embed>
+    </object>
+    <!-- <div>
+        <embed src="doc.pdf" type="">
+    </div> -->
+    <!-- <div class="container">
+        <h1>PDF Viewer</h1>
+        <div class="pdf-container">
+            <iframe id="pdfViewer" src="doc.pdf" frameborder="0"></iframe>
+        </div>
+        <input type="file" id="pdfUpload" accept="application/pdf" />
+    </div> -->
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>PDF in HTML</title>
+</head>
+<style>
+    .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+    .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1,
+    h3 {
+        text-align: center;
+    }
+
+    h1 {
+        color: green;
+    }
+</style>
+
+<body>
+
+    <h1>GeeksforGeeks</h1>
+    <h3>Embedding the PDF file Using Object Tag</h3>
+    <object class="pdf" 
+            data=https://drive.google.com/file/d/1kLPCwjHDFq69WGB4eQGRSDvNffBOB7nb/view
+            width="800"
+            height="500">
+    </object>
+</body>
+
+</html> -->

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training & Placement Cell</title>
+    <link rel="stylesheet" href="/font.css">
+    <link rel="stylesheet" href="/Tap&Placement/t&pCell.css">
+    <style>
+       .img-header {
+        color: white;
+        height: 45vh;
+        position: relative;
+        text-align: center;
+      }
+      .img-header h1 {
+        margin: 0;
+        font-size: 24px;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        font-size: 3vmax;
+        font-weight: 500;
+        z-index: 5;
+      }
+      .img-header img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(70%);
+        background-attachment: fixed;
+      }
+    </style>
+     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/Header_folder/nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav-container").innerHTML = data;
+            // Load the nav.js file after the HTML is loaded
+            let script = document.createElement("script");
+            script.src = "/Header_folder/nav.js";
+            document.body.appendChild(script);
+          });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/Footer_folder/footer.html") // Load the nav.html file
+          .then((response) => response.text()) // Get its content
+          .then((data) => {
+            document.getElementById("footer-container").innerHTML = data; // Insert into the page
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="nav-container"></div>
+<div class="img-header">
+      <h1>Tap And Placement Cell</h1>
+      <img
+        src="https://lh3.google.com/u/0/d/1vrI3ojkdgWesbc1hSZ5QxdRDhscAfAmv=w1920-h922-iv1"
+        alt=""
+      />
+    </div>
+    <div class="container">
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="#" data-content="about" class="active">About T&P Cell</a>
+          </li>
+          <li>
+            <a href="#" data-content="policy">Internship & Placement Policy</a>
+          </li>
+          <li><a href="#" data-content="recruiters">Lead Recruiters</a></li>
+          <li>
+            <a href="#" data-content="records"
+              >Internship & Placement Records</a
+            >
+          </li>
+          <li><a href="#" data-content="alumni">Prominent Alumni</a></li>
+          <li><a href="#" data-content="contact">Contact Info</a></li>
+        </ul>
+      </aside>
+      <main class="content">
+        <div id="dynamic-content">
+          <div class="content-text" id="content-area">
+           
+            <!-- Content will be loaded here -->
+            <p>
+              The Goal of the Training & Placement Cell of MITS Gwalior is to be
+              a liaison between Industry and students to provide employment
+              opportunities available in the market and to provide intensive
+              training to the students for their overall development.
+            </p>
+            <p>
+              <strong
+                >It works under the guidance of the Training & Placement Officer
+                in consultation with the Faculty In-Charge.</strong
+              >
+            </p>
+            <p>
+              Training & Placement Cell provides full placement support to its
+              students in all areas of disciplines – Civil, Mechanical,
+              Electrical, Electronics & Communication, Computer Science,
+              Information Technology, Biotechnology & Chemical Engineering,
+              Electronics & Telecommunication, Automobile Engineering and
+              Computer Applications etc.
+            </p>
+            <p>
+              Right from connecting with companies related to the
+              above-mentioned disciplines in the industry to managing all
+              logistics of arranging the whole campus recruitment process with
+              the required hospitality; T&P Cell officials and student
+              coordinators provide their best possible assistance to the
+              recruiters.
+            </p>
+            <p>
+              Apart from that, T&P Cell focuses on conducting soft &
+              professional skills training for Pre-Final & Final year students,
+              Industrial Projects/Internships & Training, Guest Lectures,
+              Motivation & Guiding Sessions, Alumni connect programmes and
+              building brand value of the Institute in the industry & market.
+            </p>
+            <h1>Training & Placement Cell Activities</h1>
+            <p>
+              <strong
+                >Training & Placement (T&P) Activities of the Institute consist
+                of the following:</strong
+              >
+            </p>
+
+            <h2>➤ Campus Placements Process:</h2>
+            <p>
+              Campus Placement Processes are organized by different companies
+              for providing job placements for students for that company's
+              contact T&P cell of MITS Gwalior. We, T&P Cell, also invite
+              companies every year. It arranges all logistics & hospitality
+              required at their best for the conduction of the selection process
+              at the Institute with all required infrastructure.
+            </p>
+            <p>
+              T&P Cell fulfills the purpose for both sides; for students to
+              secure their future careers and for the industry to secure the
+              best fresh talents available in the region. Companies are required
+              to send their details and job description for the recruitment
+              process by sending an official mail at tnp@mitsgwalior.in in the
+              same regard.
+            </p>
+
+            <h2>➤ Career Orientation Programmes:</h2>
+            <p>
+              Demanding training programmes like Soft & Professional Skills
+              training in the Institute through experienced experts and
+              programmes to orient students about industry expectations are
+              organized.
+            </p>
+            <p>
+              Additional Expert/Guest Lectures, Motivational & Guiding sessions,
+              and training sessions to improve learning in the areas like
+              Personality Development, Group Discussion, Aptitude Skills and
+              Presentation Skills.
+            </p>
+
+            <h2>➤ Industrial Training/Projects/Visits for the students:</h2>
+            <p>
+              Industrial Training and Internships are an integral part of the
+              study to acknowledge them for real-world problems. Students are
+              placed in various industries for 6 to 8 weeks and under the
+              supervision and guidance of respective industry personnel.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+        <div id="footer-container"></div>
+
+        <script src="/Tap&Placement/t&pCell.js"></script>
+
+   
+  </body>
+</html>
